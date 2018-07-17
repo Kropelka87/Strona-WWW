@@ -73,8 +73,69 @@ nav ul ul {
     display: none;
 }
 
+/* ul => li => li , ktore maja w sobie zagniezdzona liste ul 
+z-indeks = 1, czyli zawsze bedzie na 1 stronie*/
+
 nav ul li:hover > ul {
     display: block;
     position: absolute;
     z-index: 1;
+}
+
+.hero-section {
+    background-image: url(https://images.unsplash.com/photo-1531842233950-40665b542783?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=278809627619303a9987e0dddf47008d&auto=format&fit=crop&w=700&q=80);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slogan {
+    width: 80%;
+    background: rgba(0, 0, 0, 0.5); 
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+}
+
+.slogan h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.slogan h2 span {
+    color: #e00986;
+}
+
+.yellow-text {
+    font-size: 40px;
+    color: #fbb619!important;
+
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.about-section {
+    width: 100%;
+    background-color: #f29cd9;
+}
+
+.about-section h2 {
+    margin: 0;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.about-section .fa-smile-wink {
+    display: block;
+    margin: 10px auto 30px;
 }
